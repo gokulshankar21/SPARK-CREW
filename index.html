@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spark Crew</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html">Spark<em>Crew</em></a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#how">Process</a></li>
+    <li><a href="#portfolio">Work</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#team">Team</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:1.4rem">
+    <a class="nav-cta" href="login.html">Log in</a>
+    <a class="btn-apple" style="padding:.5rem 1.4rem;font-size:.88rem" href="signup.html">Sign up</a>
+  </div>
+</nav>
+
+<section id="hero">
+  <canvas id="particles"></canvas>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Next-generation IT</p>
+    <h1 class="hero-title">The technology<br><span class="thin">you always imagined.</span></h1>
+    <p class="hero-sub">Spark Crew builds the software behind ambitious companies — fast, precise, and built to last.</p>
+    <div class="hero-actions">
+      <button class="btn-apple" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">Start a project</button>
+      <button class="btn-ghost" onclick="document.getElementById('portfolio').scrollIntoView({behavior:'smooth'})">See our work</button>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span class="scroll-label">Scroll</span>
+  </div>
+</section>
+
+<section id="stats">
+  <div class="stats-row">
+    <div class="stat-cell"><div class="stat-num">200<sup>+</sup></div><div class="stat-label">Projects delivered</div></div>
+    <div class="stat-cell"><div class="stat-num">98<sup>%</sup></div><div class="stat-label">Client satisfaction</div></div>
+    <div class="stat-cell"><div class="stat-num">40<sup>+</sup></div><div class="stat-label">Countries served</div></div>
+    <div class="stat-cell"><div class="stat-num">12<sup>yr</sup></div><div class="stat-label">In the industry</div></div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="section-inner">
+    <div class="svc-intro reveal">
+      <div>
+        <p class="section-label">What we do</p>
+        <h2 class="section-headline">Built for<br><span class="thin">every ambition.</span></h2>
+      </div>
+      <p class="section-body">From the first line of code to the millionth user — we cover the full stack of modern digital products.</p>
+    </div>
+    <div class="services-grid reveal">
+      <div class="svc-card"><div class="svc-icon-wrap"><img src="assets/web.png" alt="Web" loading="lazy"></div><div class="svc-name">Web development</div><p class="svc-body">Blazing-fast React and Next.js apps, crafted for performance and scale from day one. Server-side rendering, edge caching, and Core Web Vitals tuned to perfection.</p></div>
+      <div class="svc-card"><div class="svc-icon-wrap"><img src="assets/mobile.png" alt="Mobile" loading="lazy"></div><div class="svc-name">Mobile apps</div><p class="svc-body">Native iOS and Android apps — and Flutter for when you need both at once. Offline-first sync, push notifications, and App Store launch support included.</p></div>
+      <div class="svc-card"><div class="svc-icon-wrap"><img src="assets/cloud.png" alt="Cloud" loading="lazy"></div><div class="svc-name">Cloud infrastructure</div><p class="svc-body">Auto-scaling architectures on AWS, GCP, and Azure with 99.99% uptime commitments. Infrastructure as code, automated backups, and disaster recovery built in.</p></div>
+      <div class="svc-card"><div class="svc-icon-wrap"><img src="assets/ai.png" alt="AI" loading="lazy"></div><div class="svc-name">AI and machine learning</div><p class="svc-body">Recommendation engines, NLP pipelines, computer vision, and LLM integrations. From data labeling to model deployment — we own the full MLOps lifecycle.</p></div>
+      <div class="svc-card"><div class="svc-icon-wrap"><img src="assets/design.png" alt="Design" loading="lazy"></div><div class="svc-name">UI and UX design</div><p class="svc-body">Design systems rooted in user research — beautiful, accessible, and conversion-ready. WCAG-compliant components, usability testing, and pixel-perfect handoff.</p></div>
+      <div class="svc-card"><div class="svc-icon-wrap"><img src="assets/security.png" alt="Security" loading="lazy"></div><div class="svc-name">Cybersecurity</div><p class="svc-body">Penetration testing, security audits, and compliance frameworks that hold up in court. SOC 2, ISO 27001, and GDPR readiness with continuous threat monitoring.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="section-inner">
+    <p class="section-label reveal">How it works</p>
+    <h2 class="section-headline reveal">Four steps.<br><span class="thin">Zero guesswork.</span></h2>
+    <div class="how-steps-list" style="margin-top:3rem">
+      <div class="how-step-row reveal">
+        <div>
+          <div class="step-number">01</div>
+          <div class="step-title">Discovery and strategy</div>
+          <p class="step-desc">We learn your business goals, your users, and your constraints — then we architect the right solution, not the convenient one.</p>
+        </div>
+        <div class="step-visual">
+          <span class="step-tag">Discovery</span>
+          <div style="font-size:.84rem;font-weight:300;color:var(--text-secondary);margin-bottom:.8rem">Mapping your goals</div>
+          <div class="mini-bar"><div class="mini-bar-fill" style="width:85%"></div></div>
+          <div class="mini-bar"><div class="mini-bar-fill" style="width:60%"></div></div>
+          <div class="mini-bar"><div class="mini-bar-fill" style="width:72%"></div></div>
+        </div>
+      </div>
+      <div class="how-step-row reveal">
+        <div class="step-visual" style="order:1">
+          <span class="step-tag">Design</span>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-top:.5rem">
+            <div style="background:var(--white);border-radius:10px;height:60px"></div>
+            <div style="background:var(--white);border-radius:10px;height:60px"></div>
+            <div style="background:var(--white);border-radius:10px;height:60px"></div>
+            <div style="background:rgba(0,113,227,.1);border-radius:10px;height:60px;border:1.5px solid rgba(0,113,227,.25)"></div>
+          </div>
+        </div>
+        <div style="order:2">
+          <div class="step-number">02</div>
+          <div class="step-title">Design and prototype</div>
+          <p class="step-desc">Interactive prototypes in Figma let you feel the product before a line of code is written. No surprises at handoff.</p>
+        </div>
+      </div>
+      <div class="how-step-row reveal">
+        <div>
+          <div class="step-number">03</div>
+          <div class="step-title">Build and test</div>
+          <p class="step-desc">Agile sprints, daily standups, and automated test coverage. Quality is baked in — not bolted on at the end.</p>
+        </div>
+        <div class="step-visual">
+          <span class="step-tag">Build</span>
+          <div style="font-size:.82rem;font-weight:300;color:var(--text-secondary);margin-bottom:.6rem">Overall progress</div>
+          <div style="font-size:2rem;font-weight:700;letter-spacing:-.03em;color:var(--text);margin-bottom:.5rem">68%</div>
+          <div class="mini-bar" style="height:8px;border-radius:4px"><div class="mini-bar-fill" style="width:68%;height:100%"></div></div>
+        </div>
+      </div>
+      <div class="how-step-row reveal">
+        <div class="step-visual" style="order:1">
+          <span class="step-tag">Launch</span>
+          <div style="display:flex;flex-direction:column;gap:.5rem;margin-top:.4rem">
+            <div style="background:var(--white);border-radius:8px;padding:.6rem 1rem;display:flex;align-items:center;gap:.5rem"><div style="width:8px;height:8px;border-radius:50%;background:#34c759;flex-shrink:0"></div><span style="font-size:.82rem;font-weight:300;color:var(--text-secondary)">Deployment <strong style="color:var(--text);font-weight:500">live</strong></span></div>
+            <div style="background:var(--white);border-radius:8px;padding:.6rem 1rem;display:flex;align-items:center;gap:.5rem"><div style="width:8px;height:8px;border-radius:50%;background:#34c759;flex-shrink:0"></div><span style="font-size:.82rem;font-weight:300;color:var(--text-secondary)">Uptime <strong style="color:var(--text);font-weight:500">99.99%</strong></span></div>
+            <div style="background:var(--white);border-radius:8px;padding:.6rem 1rem;display:flex;align-items:center;gap:.5rem"><div style="width:8px;height:8px;border-radius:50%;background:var(--blue);flex-shrink:0"></div><span style="font-size:.82rem;font-weight:300;color:var(--text-secondary)">Monitoring <strong style="color:var(--text);font-weight:500">active</strong></span></div>
+          </div>
+        </div>
+        <div style="order:2">
+          <div class="step-number">04</div>
+          <div class="step-title">Launch and scale</div>
+          <p class="step-desc">Zero-downtime deployments, real-time monitoring, and ongoing performance tuning after you go live.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tech">
+  <div class="section-inner">
+    <div class="tech-header reveal">
+      <div>
+        <p class="section-label">Technology</p>
+        <h2 class="section-headline">Right tool.<br><span class="thin">Right fit.</span></h2>
+      </div>
+      <p class="section-body">We're technology-agnostic. We choose what's right for your product — not what's trending.</p>
+    </div>
+    <div class="tech-chips reveal">
+      <span class="tech-chip">React</span><span class="tech-chip">Next.js</span><span class="tech-chip">TypeScript</span><span class="tech-chip">Node.js</span><span class="tech-chip">Python</span><span class="tech-chip">Go</span><span class="tech-chip">PostgreSQL</span><span class="tech-chip">Redis</span><span class="tech-chip">AWS</span><span class="tech-chip">GCP</span><span class="tech-chip">Kubernetes</span><span class="tech-chip">Docker</span><span class="tech-chip">Terraform</span><span class="tech-chip">GraphQL</span><span class="tech-chip">Figma</span><span class="tech-chip">Flutter</span><span class="tech-chip">Swift</span><span class="tech-chip">Kotlin</span>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="section-inner">
+    <div class="portfolio-intro reveal">
+      <p class="section-label">Recent work</p>
+      <h2 class="section-headline">Products we're<br><span class="thin">proud of.</span></h2>
+    </div>
+    <div class="port-grid reveal">
+      <div class="port-card"><div class="port-thumb" style="background:#dbeafe"><img src="assets/orbithq.jpg" alt="OrbitHQ" loading="lazy"></div><div class="port-info"><div class="port-name">OrbitHQ</div><div class="port-cat">SaaS · Analytics platform</div></div></div>
+      <div class="port-card"><div class="port-thumb" style="background:#ffedd5"><img src="assets/blazepath.jpg" alt="Blazepath" loading="lazy"></div><div class="port-info"><div class="port-name">Blazepath</div><div class="port-cat">Mobile · Fitness app</div></div></div>
+      <div class="port-card"><div class="port-thumb" style="background:#dcfce7"><img src="assets/verdant.jpg" alt="Verdant" loading="lazy"></div><div class="port-info"><div class="port-name">Verdant</div><div class="port-cat">E-commerce · Sustainability</div></div></div>
+      <div class="port-card"><div class="port-thumb" style="background:#f3e8ff"><img src="assets/pulseai.jpg" alt="PulseAI" loading="lazy"></div><div class="port-info"><div class="port-name">PulseAI</div><div class="port-cat">AI · Healthcare diagnostics</div></div></div>
+      <div class="port-card"><div class="port-thumb" style="background:#e0f2fe"><img src="assets/tideops.jpg" alt="TideOps" loading="lazy"></div><div class="port-info"><div class="port-name">TideOps</div><div class="port-cat">B2B · Logistics management</div></div></div>
+      <div class="port-card"><div class="port-thumb" style="background:#fefce8"><img src="assets/voltgrid.jpg" alt="VoltGrid" loading="lazy"></div><div class="port-info"><div class="port-name">VoltGrid</div><div class="port-cat">FinTech · Energy markets</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="section-inner">
+    <div class="reveal">
+      <p class="section-label">Client stories</p>
+      <h2 class="section-headline">Trusted by teams<br><span class="thin">that ship things.</span></h2>
+    </div>
+    <div class="testi-wrap">
+      <div class="testi reveal"><div class="testi-stars">★★★★★</div><p class="testi-quote">"Spark Crew challenged our assumptions and made it 10× better than what we originally spec'd. Exceptional across the board."</p><div class="testi-who"><div class="testi-initials">AR</div><div><div class="testi-person-name">Anika Ramos</div><div class="testi-person-role">CTO, OrbitHQ</div></div></div></div>
+      <div class="testi reveal"><div class="testi-stars">★★★★★</div><p class="testi-quote">"Zero to 200K users in four months. The infra handled every spike without breaking a sweat. Game-changing partnership."</p><div class="testi-who"><div class="testi-initials">JK</div><div><div class="testi-person-name">James Kim</div><div class="testi-person-role">Founder, Blazepath</div></div></div></div>
+      <div class="testi reveal"><div class="testi-stars">★★★★★</div><p class="testi-quote">"Three agencies failed before them. Spark Crew delivered a design system in six weeks our whole team loves working with."</p><div class="testi-who"><div class="testi-initials">SL</div><div><div class="testi-person-name">Sarah Linden</div><div class="testi-person-role">Head of Product, Verdant</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="section-inner">
+    <div class="pricing-head reveal">
+      <p class="section-label">Pricing</p>
+      <h2 class="section-headline">Transparent.<br><span class="thin">No surprises.</span></h2>
+      <p class="section-body" style="margin:0 auto">Choose the engagement model that fits where you are today.</p>
+    </div>
+    <div class="price-grid reveal">
+      <div class="price-tile">
+        <div class="price-plan">Starter</div>
+        <div class="price-sub">For early-stage products</div>
+        <div class="price-amount">$4,900</div>
+        <div class="price-period">per month</div>
+        <div class="price-divider"></div>
+        <ul class="price-list">
+          <li><span class="check">✓</span>Up to 2 senior engineers</li>
+          <li><span class="check">✓</span>Web or mobile development</li>
+          <li><span class="check">✓</span>Weekly sprint reviews</li>
+          <li><span class="check">✓</span>Slack and Notion workspace</li>
+        </ul>
+        <button class="price-cta outline">Get started</button>
+      </div>
+      <div class="price-tile pick">
+        <span class="pop-tag">Most popular</span>
+        <div class="price-plan">Growth</div>
+        <div class="price-sub">For scaling teams</div>
+        <div class="price-amount">$12,900</div>
+        <div class="price-period">per month</div>
+        <div class="price-divider"></div>
+        <ul class="price-list">
+          <li><span class="check">✓</span>Up to 5 senior engineers</li>
+          <li><span class="check">✓</span>Full-stack web and mobile</li>
+          <li><span class="check">✓</span>Dedicated project manager</li>
+          <li><span class="check">✓</span>UI and UX design included</li>
+          <li><span class="check">✓</span>CI/CD pipeline setup</li>
+          <li><span class="check">✓</span>Cloud infrastructure management</li>
+        </ul>
+        <button class="price-cta solid">Start building</button>
+      </div>
+      <div class="price-tile">
+        <div class="price-plan">Enterprise</div>
+        <div class="price-sub">For complex platforms</div>
+        <div class="price-amount" style="font-size:2rem">Custom</div>
+        <div class="price-period">talk to sales</div>
+        <div class="price-divider"></div>
+        <ul class="price-list">
+          <li><span class="check">✓</span>10+ engineers on demand</li>
+          <li><span class="check">✓</span>AI and ML capabilities</li>
+          <li><span class="check">✓</span>Security and compliance audit</li>
+          <li><span class="check">✓</span>24/7 monitoring and support</li>
+          <li><span class="check">✓</span>Custom SLA agreements</li>
+        </ul>
+        <button class="price-cta outline">Talk to sales</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="team">
+  <div class="section-inner">
+    <div class="team-head reveal">
+      <p class="section-label">The crew</p>
+      <h2 class="section-headline">The people behind<br><span class="thin">the sparks.</span></h2>
+    </div>
+    <div class="team-row">
+      <div class="team-tile reveal"><div class="team-avatar">AV</div><div class="team-name">Abishek</div><div class="team-role">Co-Founder and CEO</div><div class="team-chips"><span class="team-chip">Strategy</span><span class="team-chip">Product</span></div></div>
+      <div class="team-tile reveal"><div class="team-avatar">PS</div><div class="team-name">Prasanth</div><div class="team-role">Co-Founder and CTO</div><div class="team-chips"><span class="team-chip">Architecture</span><span class="team-chip">Cloud</span></div></div>
+      <div class="team-tile reveal"><div class="team-avatar">NV</div><div class="team-name">Nishanth</div><div class="team-role">Head of Design</div><div class="team-chips"><span class="team-chip">UI/UX</span><span class="team-chip">Systems</span></div></div>
+      <div class="team-tile reveal"><div class="team-avatar">GS</div><div class="team-name">Gokul Shankar</div><div class="team-role">Lead AI Engineer</div><div class="team-chips"><span class="team-chip">ML</span><span class="team-chip">LLMs</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <div style="max-width:700px;margin:0 auto;text-align:center" class="reveal">
+    <p class="section-label" style="color:rgba(255,255,255,.5)">Ready to build?</p>
+    <h2 class="cta-headline">Your best product.<br>Starts here.</h2>
+    <p class="cta-sub">Tell us what you're building. We'll tell you exactly how we'd make it exceptional — no commitment needed.</p>
+    <div class="cta-actions">
+      <button class="btn-white" onclick="openBookModal()">Book a free call</button>
+      <button class="btn-ghost-white" onclick="document.getElementById('portfolio').scrollIntoView({behavior:'smooth'})">View case studies</button>
+    </div>
+  </div>
+</section>
+
+
+<div class="modal-overlay" id="bookModal" onclick="if(event.target===this)closeBookModal()">
+  <div class="modal-card">
+    <button class="modal-close" onclick="closeBookModal()">×</button>
+    <p class="modal-eyebrow">Book a free call</p>
+    <h3 class="modal-title">Let's talk about your idea.</h3>
+    <p class="modal-text">A 30-minute discovery call with our founding team. No slides, no sales — just a real conversation about what you're building.</p>
+    <ul class="modal-details">
+      <li><div class="ico">⏱</div><div><strong>30 minutes</strong><span>Zoom or Google Meet</span></div></li>
+      <li><div class="ico">✉</div><div><strong>hello@sparkcrew.io</strong><span>Reply within 24 hours</span></div></li>
+      <li><div class="ico">📞</div><div><strong>+1 (415) 555-0123</strong><span>Mon–Fri · 9am–6pm PT</span></div></li>
+      <li><div class="ico">📍</div><div><strong>San Francisco, CA</strong><span>Remote-friendly worldwide</span></div></li>
+    </ul>
+    <div class="modal-actions">
+      <a class="modal-primary" href="mailto:hello@sparkcrew.io?subject=Book%20a%20free%20call&body=Hi%20Spark%20Crew%2C%20I%27d%20like%20to%20book%20a%20free%20call%20to%20discuss%20my%20project.">Email us</a>
+      <button class="modal-secondary" onclick="closeBookModal()">Maybe later</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="foot-top">
+    <div><div class="foot-brand">Spark<em>Crew</em></div><p class="foot-tagline">Building technology that matters — for startups, scaleups, and enterprises that refuse to settle.</p></div>
+    <div class="foot-col"><h6>Services</h6><ul><li><a href="#">Web development</a></li><li><a href="#">Mobile apps</a></li><li><a href="#">Cloud infrastructure</a></li><li><a href="#">AI and ML</a></li><li><a href="#">UI and UX design</a></li></ul></div>
+    <div class="foot-col"><h6>Contact</h6><ul><li><a href="#">hello@sparkcrew.io</a></li><li><a href="#">San Francisco, CA</a></li><li><a href="#">LinkedIn</a></li><li><a href="#">Twitter</a></li></ul></div>
+  </div>
+  <div class="foot-bottom">
+    <span class="foot-legal">Copyright © 2026 Spark Crew Inc. All rights reserved.</span>
+    <span class="foot-legal">Privacy · Terms · Cookies</span>
+  </div>
+</footer>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
